@@ -1,13 +1,14 @@
 # .gitignore
+
+# ignore node_modules
+node_modules/
+
 # ignore ruff cache
-.cache/ruff
+.ruff_cache/
 
 # ignore ruff config
 .ruffconfig
-.ruffignore
 
-# ignore python cache
-__pycache__/
-
-# ignore venv
-venv/
+# ignore ruff cache and config on Windows
+.ruff_cache/
+.ruffconfig
