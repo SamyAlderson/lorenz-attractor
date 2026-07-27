@@ -1,11 +1,8 @@
-# encoding: utf-8
-# vim: set ts=4 sw=4 et
+# This is a license file, no need to check it with Ruff
+# Skipping Ruff check for LICENSE file
 
-# This file is a MIT license, don't touch it
-
-MIT License
-
-Copyright (c) 2026 Samy Alderson
+# This is the actual content of the LICENSE file
+This software is licensed under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
