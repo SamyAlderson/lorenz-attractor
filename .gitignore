@@ -3,12 +3,25 @@
 # ignore node_modules
 node_modules/
 
+# ignore venv
+venv/
+
+# ignore build artifacts
+build/
+dist/
+*.egg-info
+
+# ignore IDE files
+.idea/
+.vscode/
+
+# ignore coverage reports
+coverage.xml
+coverage.html
+
+# ignore pyc files
+*.pyc
+*.pyo
+
 # ignore ruff cache
-.ruff_cache/
-
-# ignore ruff config
-.ruffconfig
-
-# ignore ruff cache and config on Windows
-.ruff_cache/
-.ruffconfig
+.ruffcache
