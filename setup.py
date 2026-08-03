@@ -1,7 +1,11 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as f:
-    long_description = f.read()
+try:
+    with open('README.md', 'r') as f:
+        long_description = f.read()
+except FileNotFoundError:
+    print("Error: README.md not found.")
+    exit(1)
 
 setup(
     name='lorenz-attractor',
@@ -30,5 +34,6 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering :: Visualization'
     ],
-    keywords='lorenz attractor matplotlib visualization'
+    keywords='lorenz attractor matplotlib visualization',
+    python_requires='>=3.8'
 )
