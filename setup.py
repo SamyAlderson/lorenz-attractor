@@ -1,11 +1,18 @@
 from setuptools import setup, find_packages
 
+def read_file(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        print(f"Error: {filename} not found.")
+        exit(1)
+    except Exception as e:
+        print(f"Error reading {filename}: {e}")
+        exit(1)
+
 try:
-    with open('README.md', 'r', encoding='utf-8') as f:
-        long_description = f.read()
-except FileNotFoundError:
-    print("Error: README.md not found.")
-    exit(1)
+    long_description = read_file('README.md')
 except Exception as e:
     print(f"Error reading README.md: {e}")
     exit(1)
